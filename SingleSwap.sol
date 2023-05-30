@@ -15,6 +15,7 @@ interface IERC20 {
     function approve(address spender, uint256 amount) external returns (bool);
 }
 
+// NOTE - funds have to be transferred into the contract ie LINK for the swap to be possible
 contract SingleSwap is Ownable {
     address public constant routerAddress =
         0xE592427A0AEce92De3Edee1F18E0157C05861564;
